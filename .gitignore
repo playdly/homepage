@@ -61,7 +61,7 @@ typings/
 .next
 
 # ignore build folder
-build/
+dist/
 
 #osx related files
 .DS_Store
