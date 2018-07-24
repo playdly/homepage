@@ -66,6 +66,15 @@ This is a basic webpage for Playdly but the main goal is stablish from the begin
 
 `npm build`
 
+#### Publish to Production
+
+Configure s3 and s3cmd on your machine and ask for credentials an access to the server
+
+then run the command 
+
+`s3cmd sync dist/ s3://playdly.io`
+
+`s3cmd --recursive modify --add-header="Cache-Control:public ,max-age= 31536000" s3://playdly.io/`
 
 ## NOTE:
 
